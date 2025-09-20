@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agriculture Project Pack</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Agriculture Project Pack</h1>
+    <nav>
+      <button onclick="showSection('gallery')">Gallery</button>
+      <button onclick="showSection('p1')">Smart Irrigation</button>
+      <button onclick="showSection('p2')">Market Price Tracker</button>
+      <button onclick="showSection('p3')">Crop Disease Detection</button>
+      <button onclick="showSection('p4')">Organic Fertilizer</button>
+      <button onclick="showSection('p5')">Farmer–Consumer Platform</button>
+      <button onclick="showSection('links')">Links</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Gallery -->
+    <section id="gallery" class="card active">
+      <h2>Agriculture Learning Gallery</h2>
+      <div class="gallery">
+        <img src="your-image-folder/farm1.jpg" alt="Farming photo 1">
+        <p>🌱 Healthy soil is the foundation of good farming. Proper soil management increases water retention, improves nutrient cycling, and reduces erosion. Farmers who take care of their soil enjoy stronger crops, better yields, and sustainable food production for future generations.</p>
+
+        <img src="your-image-folder/farm2.jpg" alt="Farming photo 2">
+        <p>🚰 Smart irrigation ensures water is used efficiently by delivering the right amount at the right time. It helps conserve scarce water resources, reduces costs, and keeps crops healthy. Farmers adopting this technology can increase productivity while protecting the environment.</p>
+
+        <img src="your-image-folder/farm3.jpg" alt="Farming photo 3">
+        <p>🍅 Early detection of crop diseases saves farmers from losing entire harvests. Using technology such as AI and sensors allows farmers to identify symptoms faster, apply treatment in time, and reduce pesticide use. This makes farming more sustainable and profitable.</p>
+      </div>
+      <button class="btn" onclick="showSection('p1')">Next → Go to Project Pack</button>
+    </section>
+
+    <!-- Smart Irrigation -->
+    <section id="p1" class="card">
+      <h2>1) Smart Irrigation System</h2>
+      <img src="ca.png" alt="Smart irrigation system">
+      <p>Smart irrigation uses soil moisture sensors and IoT devices to deliver just the right amount of water. This technology helps reduce waste, saves money for farmers, and protects freshwater resources. It also ensures crops remain healthy even in areas with unpredictable rainfall patterns.</p>
+    </section>
+
+    <!-- Farm Produce Market Price Tracker -->
+    <section id="p2" class="card">
+      <h2>2) Farm Produce Market Price Tracker</h2>
+      <img src="st.jpg" alt="Market price tracker">
+      <p>Market price trackers give farmers real-time information about produce prices in different markets. By knowing where prices are higher, farmers can sell strategically and maximize profits. This reduces exploitation by middlemen and empowers farmers to make informed decisions about their harvests.</p>
+    </section>
+
+    <!-- Crop Disease Detection -->
+    <section id="p3" class="card">
+      <h2>3) Crop Disease Detection App</h2>
+      <img src="ma.jpg" alt="Crop disease detection">
+      <p>This app allows farmers to photograph crop leaves and quickly detect diseases using AI. Early diagnosis means faster treatment, fewer losses, and reduced chemical use. It empowers even small-scale farmers to protect crops effectively, ensuring food security and better earnings.</p>
+    </section>
+
+    <!-- Organic Fertilizer -->
+    <section id="p4" class="card">
+      <h2>4) Organic Fertilizer from Waste</h2>
+      <img src="raw.jpg" alt="Organic compost">
+      <p>Organic fertilizers made from kitchen waste, animal manure, and crop residues improve soil fertility naturally. They reduce dependence on chemical fertilizers, enhance biodiversity, and lower costs for farmers. This practice makes farming more sustainable and produces healthier food for consumers.</p>
+    </section>
+
+    <!-- Farmer–Consumer Direct Market -->
+    <section id="p5" class="card">
+      <h2>5) Farmer–Consumer Direct Market Platform</h2>
+      <img src="ng.png" alt="Farmer consumer market">
+      <p>Direct market platforms connect farmers with consumers, eliminating unnecessary middlemen. This increases farmers’ profits and gives consumers access to fresher, cheaper produce. It also encourages trust and transparency in the food system, building stronger local food networks and supporting rural communities.</p>
+    </section>
+
+    <!-- Links -->
+    <section id="links" class="card">
+      <h2>Useful Links</h2>
+      <ul>
+        <li><a href="https://github.com/" target="_blank">GitHub Repository</a></li>
+        <li><a href="https://www.fao.org/home/en/" target="_blank">FAO Agriculture Resources</a></li>
+        <li><a href="https://www.kalro.org/" target="_blank">KALRO (Kenya Agricultural & Livestock Research)</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>📌 Put your images inside a folder called <b>your-image-folder</b> and replace the names (e.g., farm1.jpg, ca.png, raw.jpg).</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
